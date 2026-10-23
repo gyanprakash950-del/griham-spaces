@@ -1,0 +1,14 @@
+/* CSS Custom Properties - Design Tokens */
+:root {
+  --ink: #20231f;
+  --muted: #70736e;
+  --cream: #f4f3ef;
+  --paper: #fbfaf8;
+  --olive: #53634f;
+  --olive-dark: #39483b;
+  --line: #e4e2dc;
+  --gold: #ad8959;
+  --shadow: 0 20px 55px rgba(35, 39, 33, .11);
+  --serif: 'Playfair Display', Georgia, serif;
+  --sans: 'Inter', Arial, sans-serif;
+}

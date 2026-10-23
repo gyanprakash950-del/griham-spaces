@@ -1,0 +1,24 @@
+/* Button Component Styles */
+.btn {
+  min-height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 13px 25px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .35px;
+  transition: background .2s ease, color .2s ease, border-color .2s ease, transform .2s ease;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn-primary { background: var(--olive); color: white; }
+.btn-primary:hover { background: var(--olive-dark); }
+.btn-outline { color: var(--olive-dark); background: transparent; border-color: #c9cbc2; }
+.btn-outline:hover { color: white; background: var(--olive-dark); border-color: var(--olive-dark); }
+.hero .btn-outline { border-color: rgba(255,255,255,.66); color: white; }
+.hero .btn-outline:hover { color: var(--ink); background: white; }
+.hero-actions, .enquiry-actions { display: flex; flex-wrap: wrap; gap: 13px; }

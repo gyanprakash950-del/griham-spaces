@@ -1,0 +1,24 @@
+/* Feature Card Component Styles */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.feature {
+  padding: 25px 22px;
+  background: rgba(255,255,255,.55);
+  border: 1px solid var(--line);
+  border-radius: 15px;
+}
+.feature-icon { color: var(--olive); }
+.feature-icon svg { width: 32px; height: 32px; }
+.feature-title { margin: 12px 0 5px; font: 600 18px var(--serif); }
+.feature-desc { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.75; }
+
+@media (max-width: 900px) {
+  .features-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 650px) {
+  .features-grid { gap: 10px; }
+  .feature { padding: 17px 13px; border-radius: 12px; }
+}

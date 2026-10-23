@@ -1,0 +1,27 @@
+/* Griham Spaces - Main Stylesheet
+ * Modular CSS Architecture
+ * Order matters: base → components → layouts → pages
+ */
+
+/* ===== BASE LAYER ===== */
+@import './fonts.css';
+@import './base/variables.css';
+@import './base/reset.css';
+@import './base/typography.css';
+
+/* ===== COMPONENT LAYER ===== */
+@import './components/header.css';
+@import './components/footer.css';
+@import './components/buttons.css';
+@import './components/product-card.css';
+@import './components/category-card.css';
+@import './components/feature-card.css';
+@import './components/forms.css';
+
+/* ===== LAYOUT LAYER ===== */
+@import './layouts/container.css';
+
+/* ===== PAGE LAYER ===== */
+@import './pages/home.css';
+@import './pages/category-page.css';
+@import './pages/contact.css';

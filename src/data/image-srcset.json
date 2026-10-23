@@ -1,0 +1,74 @@
+{
+  "alderwood-queen-bed": {
+    "original": "/images/products/alderwood-queen-bed.jpg",
+    "webp": "/images/products/alderwood-queen-bed.webp",
+    "avif": "/images/products/alderwood-queen-bed.avif",
+    "alt": "Alderwood Queen Bed"
+  },
+  "cove-lounge-sofa": {
+    "original": "/images/products/cove-lounge-sofa.jpg",
+    "webp": "/images/products/cove-lounge-sofa.webp",
+    "avif": "/images/products/cove-lounge-sofa.avif",
+    "alt": "Cove Lounge Sofa"
+  },
+  "studio-dining-set": {
+    "original": "/images/products/studio-dining-set.jpg",
+    "webp": "/images/products/studio-dining-set.webp",
+    "avif": "/images/products/studio-dining-set.avif",
+    "alt": "Studio Dining Set"
+  },
+  "linea-wardrobe": {
+    "original": "/images/products/linea-wardrobe.jpg",
+    "webp": "/images/products/linea-wardrobe.webp",
+    "avif": "/images/products/linea-wardrobe.avif",
+    "alt": "Linea Wardrobe"
+  },
+  "arc-floor-lamp": {
+    "original": "/images/products/arc-floor-lamp.jpg",
+    "webp": "/images/products/arc-floor-lamp.webp",
+    "avif": "/images/products/arc-floor-lamp.avif",
+    "alt": "Arc Floor Lamp"
+  },
+  "still-life-wall-art": {
+    "original": "/images/products/still-life-wall-art.jpg",
+    "webp": "/images/products/still-life-wall-art.webp",
+    "avif": "/images/products/still-life-wall-art.avif",
+    "alt": "Still Life Wall Art"
+  },
+  "handwoven-textured-rug": {
+    "original": "/images/products/handwoven-textured-rug.jpg",
+    "webp": "/images/products/handwoven-textured-rug.webp",
+    "avif": "/images/products/handwoven-textured-rug.avif",
+    "alt": "Handwoven Textured Rug"
+  },
+  "sculpted-accent-mirror": {
+    "original": "/images/products/sculpted-accent-mirror.jpg",
+    "webp": "/images/products/sculpted-accent-mirror.webp",
+    "avif": "/images/products/sculpted-accent-mirror.avif",
+    "alt": "Sculpted Accent Mirror"
+  },
+  "ceramic-table-vase": {
+    "original": "/images/products/ceramic-table-vase.jpg",
+    "webp": "/images/products/ceramic-table-vase.webp",
+    "avif": "/images/products/ceramic-table-vase.avif",
+    "alt": "Ceramic Table Vase"
+  },
+  "4k-smart-television": {
+    "original": "/images/products/4k-smart-television.jpg",
+    "webp": "/images/products/4k-smart-television.webp",
+    "avif": "/images/products/4k-smart-television.avif",
+    "alt": "4K Smart Television"
+  },
+  "front-load-washer": {
+    "original": "/images/products/front-load-washer.jpg",
+    "webp": "/images/products/front-load-washer.webp",
+    "avif": "/images/products/front-load-washer.avif",
+    "alt": "Front Load Washer"
+  },
+  "bluetooth-soundbar": {
+    "original": "/images/products/bluetooth-soundbar.jpg",
+    "webp": "/images/products/bluetooth-soundbar.webp",
+    "avif": "/images/products/bluetooth-soundbar.avif",
+    "alt": "Bluetooth Soundbar"
+  }
+}

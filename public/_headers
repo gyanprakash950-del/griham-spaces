@@ -1,0 +1,35 @@
+# Netlify Headers - Alternative to netlify.toml headers
+# This file is copied to dist/ on build
+
+# Cache static assets aggressively (1 year)
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache CSS/JS
+/styles.css
+  Cache-Control: public, max-age=31536000, immutable
+
+/script.js
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache images
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache data files (1 hour)
+/data/*
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# Security headers for HTML pages
+/*.html
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Security headers for all responses
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin

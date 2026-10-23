@@ -1,0 +1,57 @@
+/* Category Page Styles */
+.products-section { padding-block: 46px 76px; }
+.section-header { max-width: 660px; margin: 0 auto 38px; text-align: center; }
+.section-title { margin: 0 0 11px; font-size: clamp(32px, 4vw, 42px); font-weight: 600; }
+.section-subtitle { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.8; }
+
+.filter-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; justify-content: center; margin-bottom: 26px; }
+.filter-btn { min-height: 36px; padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); color: var(--ink); font-size: 12px; font-weight: 500; cursor: pointer; transition: all .2s ease; }
+.filter-btn:hover { border-color: var(--olive); color: var(--olive); }
+.filter-btn.active { border-color: var(--olive); background: var(--olive); color: #fff; }
+.products-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+
+/* Product Card */
+.product-card { position: relative; background: var(--paper); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; transition: transform .2s ease, box-shadow .2s ease; }
+.product-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.product-badge { position: absolute; top: 12px; left: 12px; z-index: 2; padding: 3px 10px; border-radius: 999px; font-size: 10px; font-weight: 700; letter-spacing: .5px; }
+.product-badge--new { background: var(--olive); color: #fff; }
+.product-badge--bestseller { background: #b58900; color: #fff; }
+.product-badge--sale { background: #a23a2c; color: #fff; }
+.product-img-wrapper { aspect-ratio: 1 / 1; overflow: hidden; background: #f5f4f0; }
+.product-img-wrapper img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
+.product-card:hover .product-img-wrapper img { transform: scale(1.05); }
+.product-info { padding: 16px; }
+.product-category { margin: 0 0 5px; color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .6px; }
+.product-name { margin: 0 0 8px; font-size: 15px; font-weight: 600; line-height: 1.4; }
+.product-price { color: var(--olive); font-size: 15px; font-weight: 700; font-family: var(--sans); }
+.product-bottom { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 12px 16px; border-top: 1px solid var(--line); background: #faf9f6; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 38px; padding: 8px 16px; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; transition: all .2s ease; }
+.btn-primary { background: var(--olive); color: #fff; border: 1px solid var(--olive); }
+.btn-primary:hover { background: var(--olive-dark); border-color: var(--olive-dark); }
+.btn-outline { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+.btn-outline:hover { border-color: var(--olive); color: var(--olive); }
+.btn-sm { min-height: 34px; padding: 6px 12px; font-size: 11px; }
+.btn svg { width: 14px; height: 14px; }
+
+/* Enquiry CTA */
+.enquiry-cta { padding-block: 94px; background: #131915; color: #fff; }
+.enquiry-content { max-width: 760px; margin: auto; text-align: center; }
+.enquiry-title { margin: 0 0 16px; font-size: clamp(32px, 4vw, 44px); font-weight: 600; font-family: var(--serif); }
+.enquiry-desc { margin: 0 0 28px; color: rgba(255,255,255,.82); line-height: 1.8; }
+.enquiry-btns { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+.btn-ghost { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.4); }
+.btn-ghost:hover { border-color: #fff; background: rgba(255,255,255,.08); }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .products-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 650px) {
+  .products-section { padding-block: 30px 48px; }
+  .filter-bar { gap: 6px; margin-bottom: 20px; }
+  .filter-btn { min-height: 34px; padding: 5px 10px; font-size: 11px; }
+  .products-grid { gap: 11px; }
+  .enquiry-cta { padding-block: 61px; }
+  .enquiry-btns { flex-direction: column; align-items: center; }
+  .enquiry-btns .btn { width: 100%; max-width: 320px; }
+}

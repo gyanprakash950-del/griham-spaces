@@ -1,0 +1,58 @@
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo" aria-label="Griham Spaces - Home">
+          <span class="logo-text">Griham Spaces</span>
+          <span class="logo-tagline">Luxury Within Reach</span>
+        </a>
+        <p class="footer-tagline">Premium furniture, decor & electronics at prices that make sense.</p>
+        <div class="social-links" aria-label="Social media links">
+          <a href="https://www.instagram.com/grihamspaces.in/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://wa.me/918969343308" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 5.66 18.25l4.23 1.11-1.12-4.12A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm4.38-5.6c-.19-.1-1.13-.56-1.31-.62-.18-.07-.3-.1-.43.1-.13.2-.5.62-.62.75-.11.13-.22.15-.41.05-.19-.1-.8-.29-1.52-.93-.56-.5-.94-1.12-1.05-1.31-.11-.19-.01-.29.08-.38.08-.08.19-.22.28-.33.09-.11.12-.19.19-.32.06-.13.03-.24-.02-.33-.05-.1-.43-1.04-.59-1.43-.15-.38-.31-.33-.43-.33h-.36c-.13 0-.33.05-.5.24-.17.19-.66.65-.66 1.58s.68 1.83.78 1.96c.1.13 1.33 2.04 3.23 2.86.45.19.8.31 1.08.39.45.14.86.12 1.18.07.36-.05 1.13-.46 1.29-.91.16-.44.16-.82.11-.91-.05-.08-.17-.13-.36-.22z" /></svg>
+          </a>
+        </div>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="furniture.html">Furniture</a></li>
+          <li><a href="decor.html">Decor</a></li>
+          <li><a href="electronics.html">Electronics</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-nav" aria-label="Categories">
+        <h4 class="footer-heading"><%= footerNavTitle %></h4>
+        <ul class="footer-links">
+          <% footerNavItems.forEach(function(item) { %>
+          <li><a href="<%= item.url %>"><%= item.label %></a></li>
+          <% }); %>
+        </ul>
+      </nav>
+      <div class="footer-contact" aria-label="Contact information">
+        <h4 class="footer-heading">Contact Us</h4>
+        <address class="footer-address">
+          <p>Mathura Enclave, D.N. Singh Road</p>
+          <p>Kharmanchak, near Zudio Store</p>
+          <p>Bhagalpur, Bihar 812001</p>
+          <p class="footer-phone"><a href="tel:+918969343308">+91 89693 43308</a></p>
+          <p class="footer-email"><a href="mailto:grihamspacesofficial@gmail.com">grihamspacesofficial@gmail.com</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="copyright">&copy; <%= year %> Griham Spaces. All rights reserved.</p>
+      <p class="footer-note">Prices & availability subject to change. Please verify in-store.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top Button -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top" hidden>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+</button>

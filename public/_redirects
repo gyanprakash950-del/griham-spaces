@@ -1,0 +1,15 @@
+# Netlify Redirects - Alternative to netlify.toml redirects
+# This file is copied to dist/ on build
+
+# Clean URLs (remove .html extension)
+/furniture    /furniture.html    200
+/decor        /decor.html        200
+/electronics  /electronics.html  200
+/contact      /contact.html      200
+
+# Trailing slash redirect
+/*/           /:splat            301
+
+# Note: No SPA fallback needed since we generate static HTML for all pages
+# If you add client-side routing later, uncomment:
+# /*          /index.html        200

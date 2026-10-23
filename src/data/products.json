@@ -1,0 +1,268 @@
+{
+  "products": [
+    {
+      "id": "alderwood-queen-bed",
+      "name": "Alderwood Queen Bed",
+      "category": "beds",
+      "section": "furniture",
+      "sectionLabel": "Furniture",
+      "description": "Warm wood tones and a timeless, sturdy frame.",
+      "price": "From ₹24,999",
+      "badge": "Bestseller",
+      "image": "/images/products/alderwood-queen-bed.webp",
+      "images": [
+        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80"
+      ],
+      "specs": {
+        "material": "Solid wood",
+        "dimensions": "180x200cm",
+        "warranty": "5 years"
+      },
+      "inStock": true,
+      "featured": true,
+      "whatsappMessage": "Hello, I'm interested in the Alderwood Queen Bed. Please share details."
+    },
+    {
+      "id": "cove-lounge-sofa",
+      "name": "Cove Lounge Sofa",
+      "category": "sofas",
+      "section": "furniture",
+      "sectionLabel": "Furniture",
+      "description": "Relaxed comfort with soft, durable upholstery.",
+      "price": "From ₹32,500",
+      "badge": "Customer favourite",
+      "image": "/images/products/cove-lounge-sofa.webp",
+      "images": [
+        "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80"
+      ],
+      "specs": {
+        "material": "Fabric upholstery",
+        "dimensions": "220x90x85cm",
+        "warranty": "3 years"
+      },
+      "inStock": true,
+      "featured": true,
+      "whatsappMessage": "Hello, I'm interested in the Cove Lounge Sofa. Please share details."
+    },
+    {
+      "id": "studio-dining-set",
+      "name": "Studio Dining Set",
+      "category": "dining",
+      "section": "furniture",
+      "sectionLabel": "Furniture",
+      "description": "A welcoming table set for everyday gatherings.",
+      "price": "From ₹18,900",
+      "badge": "",
+      "image": "/images/products/studio-dining-set.webp",
+      "images": [
+        "https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=900&q=80"
+      ],
+      "specs": {
+        "material": "Engineered wood",
+        "dimensions": "150x90x75cm (table)",
+        "warranty": "2 years"
+      },
+      "inStock": true,
+      "featured": true,
+      "whatsappMessage": "Hello, I'm interested in the Studio Dining Set. Please share details."
+    },
+    {
+      "id": "linea-wardrobe",
+      "name": "Linea Wardrobe",
+      "category": "wardrobes",
+      "section": "furniture",
+      "sectionLabel": "Furniture",
+      "description": "Thoughtful storage with a clean modern finish.",
+      "price": "From ₹21,900",
+      "badge": "",
+      "image": "/images/products/linea-wardrobe.webp",
+      "images": [
+        "https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=900&q=80"
+      ],
+      "specs": {
+        "material": "Laminated particle board",
+        "dimensions": "180x210x60cm",
+        "warranty": "3 years"
+      },
+      "inStock": true,
+      "featured": true,
+      "whatsappMessage": "Hello, I'm interested in the Linea Wardrobe. Please share details."
+    },
+    {
+      "id": "arc-floor-lamp",
+      "name": "Arc Floor Lamp",
+      "category": "lighting",
+      "section": "decor",
+      "sectionLabel": "Decor",
+      "description": "A sculptural glow for a quiet reading corner.",
+      "price": "From ₹3,499",
+      "badge": "New arrival",
+      "image": "/images/products/arc-floor-lamp.webp",
+      "images": [
+        "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=80"
+      ],
+      "specs": {
+        "material": "Metal, fabric shade",
+        "dimensions": "180x40x40cm",
+        "warranty": "1 year"
+      },
+      "inStock": true,
+      "featured": true,
+      "whatsappMessage": "Hello, I'm interested in the Arc Floor Lamp. Please share details."
+    },
+    {
+      "id": "still-life-wall-art",
+      "name": "Still Life Wall Art",
+      "category": "wallart",
+      "section": "decor",
+      "sectionLabel": "Decor",
+      "description": "Soft, earthy tones to bring walls to life.",
+      "price": "From ₹1,899",
+      "badge": "",
+      "image": "/images/products/still-life-wall-art.webp",
+      "images": [
+        "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=900&q=80"
+      ],
+      "specs": {
+        "material": "Canvas print",
+        "dimensions": "60x80cm",
+        "warranty": "1 year"
+      },
+      "inStock": true,
+      "featured": false,
+      "whatsappMessage": "Hello, I'm interested in the Still Life Wall Art. Please share details."
+    },
+    {
+      "id": "handwoven-textured-rug",
+      "name": "Handwoven Textured Rug",
+      "category": "rugs",
+      "section": "decor",
+      "sectionLabel": "Decor",
+      "description": "A plush, neutral layer for living spaces.",
+      "price": "From ₹4,250",
+      "badge": "",
+      "image": "/images/products/handwoven-textured-rug.webp",
+      "images": [
+        "https://images.unsplash.com/photo-1600166898405-da9535204843?auto=format&fit=crop&w=900&q=80"
+      ],
+      "specs": {
+        "material": "Wool blend",
+        "dimensions": "160x230cm",
+        "warranty": "2 years"
+      },
+      "inStock": true,
+      "featured": false,
+      "whatsappMessage": "Hello, I'm interested in the Handwoven Textured Rug. Please share details."
+    },
+    {
+      "id": "sculpted-accent-mirror",
+      "name": "Sculpted Accent Mirror",
+      "category": "mirrors",
+      "section": "decor",
+      "sectionLabel": "Decor",
+      "description": "An elegant statement piece for an entryway.",
+      "price": "From ₹2,799",
+      "badge": "",
+      "image": "/images/products/sculpted-accent-mirror.webp",
+      "images": [
+        "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=80"
+      ],
+      "specs": {
+        "material": "Metal frame, glass",
+        "dimensions": "80x100cm",
+        "warranty": "1 year"
+      },
+      "inStock": true,
+      "featured": false,
+      "whatsappMessage": "Hello, I'm interested in the Sculpted Accent Mirror. Please share details."
+    },
+    {
+      "id": "ceramic-table-vase",
+      "name": "Ceramic Table Vase",
+      "category": "accents",
+      "section": "decor",
+      "sectionLabel": "Decor",
+      "description": "Hand-finished texture, made for your favourite shelf.",
+      "price": "From ₹899",
+      "badge": "",
+      "image": "/images/products/ceramic-table-vase.webp",
+      "images": [
+        "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=900&q=80"
+      ],
+      "specs": {
+        "material": "Ceramic",
+        "dimensions": "25x15cm",
+        "warranty": "1 year"
+      },
+      "inStock": true,
+      "featured": false,
+      "whatsappMessage": "Hello, I'm interested in the Ceramic Table Vase. Please share details."
+    },
+    {
+      "id": "4k-smart-television",
+      "name": "4K Smart Television",
+      "category": "tv",
+      "section": "electronics",
+      "sectionLabel": "Electronics",
+      "description": "Vivid 4K picture and easy access to streaming.",
+      "price": "Ask for today's price",
+      "badge": "Popular",
+      "image": "/images/products/4k-smart-television.webp",
+      "images": [
+        "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=900&q=80"
+      ],
+      "specs": {
+        "resolution": "4K UHD",
+        "sizes": "43\", 50\", 55\", 65\"",
+        "warranty": "1 year manufacturer"
+      },
+      "inStock": true,
+      "featured": true,
+      "whatsappMessage": "Hello, I'm interested in the 4K Smart Television. Please share details."
+    },
+    {
+      "id": "front-load-washer",
+      "name": "Front Load Washer",
+      "category": "appliances",
+      "section": "electronics",
+      "sectionLabel": "Electronics",
+      "description": "Efficient everyday washing with modern features.",
+      "price": "Ask for today's price",
+      "badge": "",
+      "image": "/images/products/front-load-washer.webp",
+      "images": [
+        "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=900&q=80"
+      ],
+      "specs": {
+        "capacity": "7-9 kg",
+        "energyRating": "5 star",
+        "warranty": "2 years"
+      },
+      "inStock": true,
+      "featured": false,
+      "whatsappMessage": "Hello, I'm interested in the Front Load Washer. Please share details."
+    },
+    {
+      "id": "bluetooth-soundbar",
+      "name": "Bluetooth Soundbar",
+      "category": "audio",
+      "section": "electronics",
+      "sectionLabel": "Electronics",
+      "description": "Clear dialogue and room-filling home audio.",
+      "price": "Ask for today's price",
+      "badge": "",
+      "image": "/images/products/bluetooth-soundbar.webp",
+      "images": [
+        "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=900&q=80"
+      ],
+      "specs": {
+        "power": "120W",
+        "connectivity": "Bluetooth, HDMI ARC, Optical",
+        "warranty": "1 year"
+      },
+      "inStock": true,
+      "featured": false,
+      "whatsappMessage": "Hello, I'm interested in the Bluetooth Soundbar. Please share details."
+    }
+  ]
+}

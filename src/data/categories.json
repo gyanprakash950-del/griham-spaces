@@ -1,0 +1,35 @@
+{
+  "furniture": {
+    "title": "Furniture",
+    "filters": [
+      { "id": "all", "label": "All", "icon": "" },
+      { "id": "wardrobes", "label": "Wardrobes", "icon": "wardrobes" },
+      { "id": "beds", "label": "Beds", "icon": "beds" },
+      { "id": "sofas", "label": "Sofas", "icon": "sofas" },
+      { "id": "dining", "label": "Dining", "icon": "dining" },
+      { "id": "tv", "label": "TV Units", "icon": "tv" },
+      { "id": "other", "label": "Others", "icon": "other" }
+    ]
+  },
+  "decor": {
+    "title": "Home Decor",
+    "filters": [
+      { "id": "all", "label": "All", "icon": "" },
+      { "id": "lighting", "label": "Lighting", "icon": "lighting" },
+      { "id": "wallart", "label": "Wall Art", "icon": "wallart" },
+      { "id": "rugs", "label": "Rugs", "icon": "rugs" },
+      { "id": "mirrors", "label": "Mirrors", "icon": "mirrors" },
+      { "id": "accents", "label": "Accents", "icon": "accents" }
+    ]
+  },
+  "electronics": {
+    "title": "Electronics",
+    "filters": [
+      { "id": "all", "label": "All", "icon": "" },
+      { "id": "tv", "label": "Smart TVs", "icon": "tv" },
+      { "id": "appliances", "label": "Appliances", "icon": "appliances" },
+      { "id": "audio", "label": "Audio", "icon": "audio" },
+      { "id": "other", "label": "Others", "icon": "other" }
+    ]
+  }
+}

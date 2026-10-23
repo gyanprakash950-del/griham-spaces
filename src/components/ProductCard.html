@@ -1,0 +1,17 @@
+<article class="product-card" data-product-id="{{id}}">
+  <div class="product-image-wrap">
+    <img class="product-image" src="{{image}}" alt="{{name}}" loading="lazy" width="400" height="328">
+    {{#if badge}}
+    <span class="product-badge">{{badge}}</span>
+    {{/if}}
+  </div>
+  <div class="product-info">
+    <span class="product-category">{{sectionLabel}}</span>
+    <h3 class="product-title">{{name}}</h3>
+    <p class="product-description">{{description}}</p>
+    <div class="product-bottom">
+      <span class="product-price">{{price}}</span>
+      <a class="product-enquire" href="https://wa.me/918969343308?text={{whatsappMessage}}" target="_blank" rel="noopener noreferrer">Ask on WhatsApp →</a>
+    </div>
+  </div>
+</article>
