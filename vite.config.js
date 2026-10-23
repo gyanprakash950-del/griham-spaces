@@ -6,7 +6,7 @@ import fs from 'fs';
 import { render } from 'ejs';
 
 // Site URL for SEO (update for production)
-const SITE_URL = 'https://grihamspaces.com';
+const SITE_URL = 'https://grihamspaces.netlify.app';
 
 // Load data files
 const siteData = JSON.parse(fs.readFileSync(resolve(__dirname, 'src/data/site.json'), 'utf-8'));
