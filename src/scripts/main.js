@@ -4,6 +4,7 @@
 import { initHeader, setActiveNavLink } from './components/Header.js';
 import { initFooter } from './components/Footer.js';
 import { initProductGrid, initFeaturedProducts } from './components/ProductGrid.js';
+import { initCategoriesGrid } from './components/CategoriesGrid.js';
 import { getCurrentPageSection } from './utils/helpers.js';
 
 /**
@@ -21,8 +22,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   const section = getCurrentPageSection();
 
   if (section === 'index') {
-    // Home page - initialize featured products
+    // Home page - initialize featured products and categories grid
     await initFeaturedProducts();
+    initCategoriesGrid();
   } else if (['furniture', 'decor', 'electronics'].includes(section)) {
     // Category pages - initialize product grid with filtering
     await initProductGrid(section);

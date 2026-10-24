@@ -1,6 +1,10 @@
 /**
  * Footer component - Handles back-to-top button and footer interactions
+ * Back-to-top uses spring animation for fluid appearance/disappearance
  */
+import { springWithPreset, SpringPresets } from '../utils/springs.js';
+
+let backToTopAnimation = null;
 
 /**
  * Initialize footer functionality
@@ -11,18 +15,30 @@ export function initFooter() {
 }
 
 /**
- * Initialize back-to-top button
+ * Initialize back-to-top button with spring animation
  */
 function initBackToTop() {
   const backToTop = document.getElementById('backToTop');
   if (!backToTop) return;
 
+  // Initial state - hidden and scaled down
+  backToTop.style.opacity = '0';
+  backToTop.style.transform = 'scale(0.8) translateY(20px)';
+  backToTop.style.transition = 'none';
+  backToTop.hidden = true;
+
   // Throttled scroll handler for better performance
   let ticking = false;
+  let isVisible = false;
+
   const handleScroll = () => {
     if (!ticking) {
       window.requestAnimationFrame(() => {
-        backToTop.hidden = window.scrollY < 500;
+        const shouldShow = window.scrollY >= 500;
+        if (shouldShow !== isVisible) {
+          isVisible = shouldShow;
+          animateBackToTop(backToTop, shouldShow);
+        }
         ticking = false;
       });
       ticking = true;
@@ -45,6 +61,31 @@ function initBackToTop() {
 
   // Initial check
   handleScroll();
+}
+
+/**
+ * Animate back-to-top button with spring
+ */
+function animateBackToTop(button, show) {
+  if (backToTopAnimation) {
+    backToTopAnimation.cancel();
+  }
+
+  if (show) {
+    button.hidden = false;
+    backToTopAnimation = springWithPreset(button, {
+      opacity: [0, 1],
+      transform: ['scale(0.8) translateY(20px)', 'scale(1) translateY(0)']
+    }, 'snappy');
+  } else {
+    backToTopAnimation = springWithPreset(button, {
+      opacity: [1, 0],
+      transform: ['scale(1) translateY(0)', 'scale(0.8) translateY(20px)']
+    }, 'press');
+    backToTopAnimation.onfinish = () => {
+      if (!isVisible) button.hidden = true;
+    };
+  }
 }
 
 /**
