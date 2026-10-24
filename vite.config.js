@@ -121,6 +121,13 @@ function htmlGeneratorPlugin() {
     closeBundle() {
       const outDir = resolve(__dirname, 'dist');
 
+      // Read Vite manifest for built bundle URLs
+      const manifestPath = resolve(outDir, '.vite', 'manifest.json');
+      let manifest = {};
+      if (fs.existsSync(manifestPath)) {
+        manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf-8'));
+      }
+
       // Ensure dist directory exists
       if (!fs.existsSync(outDir)) {
         fs.mkdirSync(outDir, { recursive: true });
@@ -134,8 +141,26 @@ function htmlGeneratorPlugin() {
             views: [resolve(__dirname, 'src')],
           });
 
-          // Add module script reference
-          const finalHtml = rendered.replace('</body>', `<script type="module" src="/scripts/${name}.js"></script>\n</body>`);
+          // Inject actual built bundle from manifest
+          const entryKey = `scripts/entries/${name}.js`;
+          const entry = manifest[entryKey];
+          let scriptTag = '';
+
+          if (entry && entry.file) {
+            // Production: use built bundle
+            scriptTag = `<script type="module" src="/${entry.file}"></script>`;
+            // Also include CSS if present
+            if (entry.css && entry.css.length > 0) {
+              entry.css.forEach(cssFile => {
+                scriptTag = `<link rel="stylesheet" href="/${cssFile}">\n` + scriptTag;
+              });
+            }
+          } else {
+            // Development fallback
+            scriptTag = `<script type="module" src="/scripts/${name}.js"></script>`;
+          }
+
+          const finalHtml = rendered.replace('</body>', `${scriptTag}\n</body>`);
 
           // Write to dist
           const outputPath = resolve(outDir, `${name}.html`);
@@ -236,6 +261,7 @@ export default defineConfig({
   build: {
     outDir: '../dist',
     emptyOutDir: true,
+    manifest: true,
     rollupOptions: {
       input: jsEntries,
     },
